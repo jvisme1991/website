@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Your Gateway to Success in Commercial Real Estate</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="images/">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .splide__slide img {
+        max-height: 300px;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+      }
+    </style>
+    <script src="js/splide.min.js"></script>
+    <script src="general.js"></script>
+    <script src="splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script src="https://github.com/Splidejs/splide-extension-auto-scroll/blob/master/dist/js/splide-extension-auto-scroll.cjs.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const splide = new Splide(".splide", {
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          autowidth: true,
+          perPage: 3,
+          autoplay: true,
+          speed: 2000,
+          autoScroll: {
+            speed: 2,
+          },
+          interval: 6500,
+          arrows: false,
+          pagination: true,
+          pauseOnHover: false,
+          wheel: true,
+        });
+        splide.mount();
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".navbar-second");
+        nav.classList.toggle("scrolled", window.scrollY > 0);
+      });
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar-one flex ">
+        <div class="left flex">
+          <div class="email">
+            <i class="fa fa-envelope"
+              ><a href="mailto:jarrod@staplescommercial.com">
+                <span>jarrod@staplescommercial.com</span>
+              </a>
+            </i>
+          </div>
+          <div class="call">
+            <i class="fa fa-phone-alt">
+              <a href="callto:903-574-2424">
+                <span>(903)574-2424</span>
+              </a>
+            </i>
+          </div>
+        </div>
+        <div class="right flex">
+          <div class="linkedin">
+            <i class="fab fa-linkedin">
+              <a href="https://www.linkedin.com/in/jarrod-ver-hey-714282153/">
+                <span>linkedin</span>
+              </a>
+            </i>
+          </div>
+          <div class="facebook">
+            <i class="fab fa-facebook">
+              <a href="https://www.facebook.com/Jarrod.Verhey01">
+                <span>facebook</span>
+              </a>
+            </i>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar-second flex | fs-500 fw-medium logo-blue">
+        <div>
+          <img class="logo" src="images/TRANSPARENT HORIZ.png" alt="logo" />
+        </div>
+        <ul class="flex">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="listings.html">listings</a></li>
+          <li><a href="services.html">services</a></li>
+          <!--<li><a href="testimonials.html">testimonials</a></li>-->
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="review.html">review</a></li>
+        </ul>
+
+
+
+      <div class="menu">
+          <ul>
+            <li class="menu-list">
+              <a class="menu-text" href=>menu</a>
+              <ul class="dropdown">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="listings.html">listings</a></li>
+                <li><a href="services.html">services</a></li>
+                <!--<li><a href="testimonials.html">testimonials</a></li>-->
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="review.html">review</a></li>    
+              </ul>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+    </header>
+
+    <section>
+      <div class="hero">
+        <h1 class="fs-700 fw-bold bg-primary">Welcome to Jarrod's Commercial Realty</h1>
+        <h2>Your Trusted Partner in Commercial Real Estate</h2>
+        <a class="cta-button" href="listings.html">Discover Properties</a>
+    </div>
+  
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>Hello, I'm Jarrod, a dedicated commercial realtor serving Jacksonville, TX, and the surrounding areas. With a passion for real estate and a commitment to exceeding your expectations, I'm here to help you navigate the complex world of commercial properties.</p>
+
+      <p>**Experience:** With years of experience in the real estate industry, I bring a wealth of knowledge and a proven track record of successful deals. My expertise spans a wide range of commercial properties, including office spaces, retail properties, industrial facilities, and more. Whether you're buying, selling, or leasing, I have the skills to guide you through every step of the process.</p>
+
+      <p>**Client-Centric Approach:** I understand that real estate decisions are significant and can be complex. That's why I prioritize clear communication, market insights, and a personalized approach tailored to your specific needs. Your goals become my goals, and I'm here to ensure your commercial real estate transactions are as seamless as possible.</p>
+
+      <p>**Community Involvement:** As a resident of this vibrant community, I'm deeply committed to its growth and success. I believe in giving back and am actively involved in local organizations and events that support our area's prosperity. I'm not just your realtor; I'm your neighbor and advocate for a thriving business environment.</p>
+
+      <p>**Get in Touch:** I look forward to the opportunity to work with you, whether you're searching for the perfect commercial property, selling your investment, or seeking expert advice in this dynamic market. Feel free to reach out, and let's discuss how I can assist you in achieving your real estate goals.</p>
+  </div>
+  <div class="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <h3>Listings for Lease</h3>
+        <p>Explore our portfolio of office spaces, retail storefronts, industrial warehouses, and more.</p>
+    </div>
+    <div class="service-item">
+        <h3>Properties for Sale</h3>
+        <p>Expert guidance for buying and selling commercial real estate.</p>
+    </div>
+    <div class="service-item">
+        <h3>Market Analysis</h3>
+        <p>Deep market insights and research to inform your real estate decisions.</p>
+    </div>
+    <div class="service-item">
+        <h3>Negotiation Expertise</h3>
+        <p>Skilled negotiation for securing the best terms and deals.</p>
+    </div>
+    <div class="service-item">
+        <h3>Personalized Guidance</h3>
+        <p>Tailored advice to meet your unique requirements and objectives.</p>
+    </div>
+    <div class="service-item">
+        <h3>Local Expertise</h3>
+        <p>Deep knowledge of the Jacksonville, TX area and its surroundings.</p>
+    </div>
+    <div class="service-item">
+        <h3>Client Satisfaction</h3>
+        <p>Your success is our measure of success. We build lasting relationships based on trust and results.</p>
+    </div>
+    <div class="get-started">
+        <a href="contact.html">Get Started</a>
+    </div>
+</div>
+
+<section class="property-showcase">
+  <section class="featured-listings">
+    <div>
+      <h1 class="featured-listings-text">Featured Listings</h1>
+      <h2 class="f-l-t-s">
+        Commercial Properties In Jacksonville and Surrounding Areas
+      </h2>
+    </div>
+
+    <!--<div class="fixed-background-img">
+      <img src="images/RGB_STACKED.png" alt="logo" width="1500" height="950">
+    </div>-->
+
+    <section class="carousel">
+      <div class="splide">
+        <div class="splide__slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/01.jpg" alt="aneirin" />
+              </li>
+              <li class="splide__slide">
+                <img class="img-02" src="images/02.jpg" alt="dristi" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/03.png" alt="charmaine" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/04.jpg" alt="em" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/05.JPG" alt="gill" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/06.jpg" alt="laverne" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/07.jpg" alt="mindigo" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <div class="form-container">
+        <form action="submit_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+    </section>
+
+    
+    <section>
+      <footer>
+        <div class="button-container">
+          <button class="consumer-protection-button" onclick="window.location.href= 'https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-4-1_1.pdf'">
+            Consumer Protection Notice
+          </button>
+          <button class="brokerage-services-button"
+          onclick="window.open('Information_about_Brokerage_Services_BuyerTenant_-_112015_ts69306.pdf')">
+            Information About Brokerage Services
+          </button>
+        </div>
+      </footer>
+      <div class="footer-headline">
+        &copy;<span id="year">2023 </span
+        ><span> Staples Commercial Group. All rights reserved.</span>
+      </div>
+    </section>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+  </body>
+</html>

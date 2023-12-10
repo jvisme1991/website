@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        list-style: none;
+      }
+      ul[role="list"],
+      ol[role="list"] {
+        list-style: none;
+      }
+      html:focus-within {
+        scroll-behavior: smooth;
+      }
+      html,
+      body {
+        height: -webkit-fill-available;
+        height: 100%;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        background-color: rgba(231, 231, 231, 0.5);
+      }
+      a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+      img,
+      picture,
+      svg {
+        max-width: 100%;
+        display: block;
+      }
+      @media (prefers-reduce-motion: reduce) {
+        html:focus-within {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01 ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      /* Style for the slide content container */
+      .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Style for the image inside the slide content */
+      .slide-content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Style for the address and price */
+      .slide-info {
+        margin-top: 10px;
+      }
+
+      .address {
+        font-weight: bold;
+      }
+
+      .price {
+        color: #007bff;
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#main-slider", {
+          type: "fade", // or 'slide'
+          heightRatio: 0.5, // Adjust the height as needed
+          perPage: 1, // Show one slide at a time
+          autoplay: true, // Enable autoplay
+          interval: 3000, // Set the interval between slides (in milliseconds)
+        }).mount();
+      });
+    </script>
+
+    <script src="js/splide.min.js"></script>
+    <script src="general.js"></script>
+    <script src="splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script src="https://github.com/Splidejs/splide-extension-auto-scroll/blob/master/dist/js/splide-extension-auto-scroll.cjs.js"></script>
+  </head>
+  <body>
+    <div class="splide" id="main-slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="slide-content">
+              <img src="images/01.jpg" alt="Slide 1" />
+              <div class="slide-info">
+                <p class="address">123 Main Street</p>
+                <p class="price">$500,000</p>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-content">
+              <img src="images/02.jpg" alt="Slide 2" />
+              <div class="slide-info">
+                <p class="address">456 Elm Avenue</p>
+                <p class="price">$750,000</p>
+              </div>
+            </div>
+          </li>
+          <!-- Add more slides with image, address, and price as needed -->
+        </ul>
+      </div>
+    </div>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

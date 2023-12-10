@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Your Gateway to Success in Commercial Real Estate</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="listings.css">
+    <link rel="stylesheet" href="splide.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+      .splide__slide img {
+        max-height: 19rem;
+        width: 30rem;
+        height: auto;
+        max-width: 100%;
+      }
+    </style>
+        <script src="js/splide.min.js"></script>
+    <script src="general.js"></script>
+    <script src="splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script src="https://github.com/Splidejs/splide-extension-auto-scroll/blob/master/dist/js/splide-extension-auto-scroll.cjs.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const splide = new Splide(".splide", {
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          autowidth: true,
+          perPage: 3,
+          autoplay: true,
+          speed: 2000,
+          autoScroll: {
+            speed: 2,
+          },
+          interval: 3000,
+          arrows: false,
+          pagination: true,
+          pauseOnHover: false,
+          wheel: true,
+        });
+        splide.mount();
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".navbar-second");
+        nav.classList.toggle("scrolled", window.scrollY > 0);
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar-one flex">
+        <div class="left flex">
+          <div class="email">
+            <i class="fa fa-envelope"
+              ><a href="mailto:jarrod@staplescommercial.com">
+                <span>jarrod@staplescommercial.com</span>
+              </a>
+            </i>
+          </div>
+          <div class="call">
+            <i class="fa fa-phone-alt">
+              <a href="callto:903-574-2424">
+                <span>(903)574-2424</span>
+              </a>
+            </i>
+          </div>
+        </div>
+        <div class="right flex">
+          <div class="linkedin">
+            <i class="fab fa-linkedin">
+              <a href="https://www.linkedin.com/in/jarrod-ver-hey-714282153/">
+                <span>linkedin</span>
+              </a>
+            </i>
+          </div>
+          <div class="facebook">
+            <i class="fab fa-facebook">
+              <a href="https://www.facebook.com/Jarrod.Verhey01">
+                <span>facebook</span>
+              </a>
+            </i>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar-second flex">
+        <div>
+          <img class="logo" src="images/TRANSPARENT HORIZ.png" alt="logo" />
+        </div>
+        <ul class="flex">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="listings.html">listings</a></li>
+          <li><a href="services.html">services</a></li>
+          <!--<li><a href="testimonials.html">testimonials</a></li>-->
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="review.html">review</a></li>
+        </ul>
+
+
+
+      <div class="menu">
+          <ul>
+            <li class="menu-list">
+              <a class="menu-text" href=>menu</a>
+              <ul class="dropdown">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="listings.html">listings</a></li>
+                <li><a href="services.html">services</a></li>
+                <!--<li><a href="testimonials.html">testimonials</a></li>-->
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="review.html">review</a></li>    
+              </ul>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+    </header>
+
+
+    <section>
+      <div class="background-img wow fadeIn">
+        <div class="main-pg-text">
+          <h1 class= "wow fadeInDown" data-wow-delay="0.8s">Commercial Real Estate</h1>
+          <h2 class="wow fadeInDown" data-wow-delay="1.3s">Passionate. Experienced. Dedicated.</h2>
+          <h3 class="wow fadeInDown" data-wow-delay="1.8s">
+            We are a Commercial Real Estate Brokerage servicing Jacksonville and
+            the East Texas Area. We specialize in Retail, Office Space,
+            Warehouse, Land, and Industrial Properties. We service
+            Buyers/Sellers, and Tenants/Landlords. Contact us today to see how
+            we can help you achieve the maximum value for your investment.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <section class="featured-listings">
+        <div>
+          <h1 class="featured-listings-text">Featured Listings</h1>
+          <h2 class="f-l-t-s">
+            Commercial Properties In Jacksonville and Surrounding Areas
+          </h2>
+        </div>
+
+        <!--<div class="fixed-background-img">
+          <img src="images/RGB_STACKED.png" alt="logo" width="1500" height="950">
+        </div>-->
+
+        <section class="splide-carousel" aria-label="main-page-slide">
+          <div class="splide">
+            <div class="splide__slider">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <a href="https://www.crexi.com/properties/1157935/texas-22-acres-industrial-land-development" class="no-underline">
+                        <img src="images/05.JPG" alt="22-acres-industrial-land">
+                        <div class="card-body-text">
+                          <div class="price">$2,850,000</div>
+                          <div class="address">1511 S Jackson St</div>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <a href="https://www.crexi.com/properties/1163413/texas-el-gol-restaurant-and-indoor-complex">
+                        <img src="images/03.png" alt="sports-complex">
+                          <div class="card-body-text">
+                            <div class="price">$1,200,000</div>
+                            <div class="address">2200 Hwy 79</div>
+                          </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <a href="https://www.crexi.com/properties/1284225/texas-lumber-yard">
+                        <img src="images/08.jpg" alt="lumber-yard">
+                          <div class="card-body-text">
+                            <div class="price">$575,000</div>
+                            <div class="address">503 Alabama Ave</div>
+                          </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <a href="https://www.crexi.com/properties/1112607/texas-76-acres-in-jacksonville">
+                        <img src="images/09.jpg" alt="7.6-acres-hwy69">
+                          <div class="card-body-text">
+                            <div class="price">$699,000</div>
+                            <div class="address">946 N Jackson St</div>
+                          </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <a href="https://www.crexi.com/properties/1209200/texas-prime-449-acres-on-hwy-69">
+                        <img src="images/10.jpg" alt="4.49-acres-hwy69">
+                          <div class="card-body-text">
+                            <div class="price">$599,000</div>
+                            <div class="address">N Jackson St</div>
+                          </div>
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+      </section>
+      <section class="four-four-grid">
+          <div class="grid-item">
+            <div>
+              <ul>
+              <li class="about" onclick="location.href='about.html';"><a href="about.html">About Jarrod</a></li>
+             </div>
+            <div>
+              <ul>
+              <li class="listings" onclick="location.href='listings.html';"><a href="listings.html">Properties</a></li>
+            </div></ul>
+            <div>
+              <ul>
+              <li class="services" onclick="location.href='services.html';"><a href="services.html">Services</a></li>
+            </div></ul>
+            <div>
+              <ul>
+              <li class="testimonials" onclick="location.href='testimonials.html';"><a href="testimonials.html">Testimonials</a></li>        
+            </ul>
+            </div>
+          </div>
+      </section>
+      
+    <section>
+      <footer>
+        <div class="button-container">
+          <button class="consumer-protection-button" onclick="window.location.href= 'https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-4-1_1.pdf'">
+            Consumer Protection Notice
+          </button>
+          <button class="brokerage-services-button"
+          onclick="window.open('Information_about_Brokerage_Services_BuyerTenant_-_112015_ts69306.pdf')">
+            Information About Brokerage Services
+          </button>
+        </div>
+      </footer>
+      <div class="footer-headline">
+        &copy;<span id="year">2023 </span
+        ><span> Staples Commercial Group. All rights reserved.</span>
+      </div>
+    </section>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+/* very first thing*/ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  list-style: none;
+}
+ul[role="list"],
+ol[role="list"]{
+  list-style: none;
+}
+html:focus-within{
+  scroll-behavior: smooth;
+}
+html,
+body{
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: rgba(231, 231, 231, 0.5);
+}
+body{
+  font-family: var(--ff-body);
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img,
+picture,
+svg{
+  max-width: 100%;
+  display: block;
+}
+/* Remove all animation, transitions and smooth*/
+@media (prefers-reduce-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01 ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --clr-logo-blue: hsl(236, 53%, 34%);
+  --clr-logo-green: hsl(157, 72%, 22%);
+
+  --clr-primary-400: hsl(0, 0%, 0%);
+  --clr-primary-100: hsl(0, 0%, 100%);
+
+  --clr-button-400: hsl(211, 100%, 20%);
+  --clr-button-100: hsl(211, 100%, 50%);
+
+  --clr-neutral-100: hsl(0, 0%, 96%);
+  --clr-neutral-900: ;
+
+  font-family: 'Roboto', sans-serif;
+
+  --font-family-primary: font-family: 'Roboto', sans-serif;;
+
+  --ff-body: var(var(--font-family-primary));
+  --ff-heading: var(var(--font-family-primary));
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-400: 1rem; /*16px*/
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 4rem;
+}
+
+/*UTILITIES*/
+
+.text-primary-400{
+  color: var(--clr-primary-400)
+}
+.logo-blue {
+  color: var(--clr-logo-blue);
+}
+.logo-green {
+  color: var(--clr-logo-green);
+}
+.bg-primary-400 {
+  color: var(--clr-primary-100)
+}
+.bg-primary-100 {
+  color:var(--clr-neutral-100)
+}
+
+.fw-bold { font-weight: var(--fw-bold);}
+.fw-medium { font-weight: var(--fw-medium);}
+.fw-regular { font-weight: var(--fw-regular);}
+
+.fs-400 {font-size: var(--fs-400);}
+.fs-500 {font-size: var(--fs-500);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-700 {font-size: var(--fs-700);}
+
+/* default styling for content */
+.content {
+  max-width: 1520px;
+  margin: 0 auto;
+  z-index: 200;
+  /* other styles as needed */
+}
+.background-img-tabs {
+  background-image: url('images/Untitled_1.11.1-2.jpg');
+  background-size: cover;
+  position: relative;
+  min-height: 26rem;
+  background-position-x: 0%;
+  background-position-y: 10%;
+}
+.background-img-tabs-text{
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  text-transform: uppercase;
+  right: 0;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: white;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: rgb(4, 4, 4);
+}
+
+
+ /* media query for 4k aspect ratio */
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 2560px) {
+  .content {
+    max-width: 1920px;
+    border: none;
+    /* other styles as needed */
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 2200px) {
+  .main-page-text {
+    left: 40%;
+    /* other styles as needed */
+  }
+}
+@media screen and (max-width: 415px) {
+  body{
+    margin: 0;
+    padding: 0;
+    z-index: 800;
+    max-width: 100%;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    overflow-x: hidden;
+  }
+  .navbar-one span{
+    display: none;
+   }
+  .navbar-one i{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+    gap: 100px;
+  }
+  .navbar-second{
+    display: flex;
+  }
+  
+  .main-page-text{
+    margin-top: -60px;
+  }
+  .commercial-real-estate{
+    font-size: 15px;
+  }
+  .h2{
+    font-size: 12px;
+  }
+  .carousel{
+    max-width: 350px;
+  }
+  .four-four-grid p{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .footer-headline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-size: 10px;
+  }
+}
+/*for mobile views*/
+/*iPhone 14*
+@media only screen
+and (width: 390px) 
+and (device-height: 844px)
+and (-webkit-device-pixel-ratio: 3) {
+  .content{
+    max-width: fit-content;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .background-img {
+    background-image: url('images/Untitled_1.11.1.png');
+    background-size: cover;
+    position: relative;
+    min-height: 20rem;
+    background-position: 30%;
+  }
+  
+ }
+
+/*iPhone 14 Pro
+@media only screen
+    and (width: 393px) 
+    and (device-height: 852px)
+    and (-webkit-device-pixel-ratio: 3) { }
+
+/*iPhone 14 Pro Max
+@media only screen
+    and (width: 430px) 
+    and (device-height: 932px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+ /* media query for screen size under 720px
+@media screen and (max-width: 719px) {
+  .object {
+    display: flex;
+    /* other styles as needed 
+  }
+}*/
+/* 2340x1080 pixels at 476ppi iPhone 13 mini
+@media only screen 
+    and (width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+    /* 2532x1170 pixels at 460ppi iPhone 13 and Pro
+@media only screen 
+and (width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+  .content{
+    max-width: fit-content;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .background-img {
+    background-image: url('images/Untitled_1.11.1.png');
+    background-size: cover;
+    position: relative;
+    background-position: 30%;
+  }
+
+ }
+/* 1792x828px at 326ppi Older iPhones
+@media screen 
+    and (min-width: 300px) {
+      .content{
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      .background-img {
+        background-image: url('images/Untitled_1.11.1.png');
+        position: relative;
+        height: 150px;
+      }
+    
+     }*/

@@ -1,0 +1,39 @@
+footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .consumer-protection-button,
+.brokerage-services-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+ .consumer-protection-button:hover,
+.brokerage-services-button:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+}
+.footer-headline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: #106243;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
